@@ -101,45 +101,204 @@
         <a href="#business-case-2">Business Case 2</a>
     </nav>
 
-    <section id="business-case-1">
-        <h2>Business Case 1: Sorting Public Transports by Daily Ridership</h2>
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>Welcome to my portfolio for the course <strong>Design Analysis and Algorithm</strong>. This portfolio highlights the academic project and various analyses conducted as part of the coursework.</p>
+        <p><strong>Course Instructor:</strong> KMM Rajshekar</p>
+    </section>
+
+    <section id="me-and-my-team">
+        <h2>Me and My Team</h2>
+
+        <h3>About Me</h3>
+        <p>Hello! I am Praveen Alur, a 3rd-semester B.Tech student at KLE Technological University. I completed my secondary schooling at Gurukul PU College, Kalaburagi, Karnataka, and higher secondary from Kenbridge School Kalaburagi. I have a strong passion for learning programming and problem-solving with algorithms. Currently, I am exploring various technologies to expand my skill set.</p>
+
+        <h3>Skills</h3>
+        <ul class="skills-list">
+            <li><strong>Programming Languages:</strong> C, C++, Python, HTML</li>
+            <li><strong>Tools & Technologies:</strong> Git and GitHub, MySQL, Bootstrap</li>
+            <li><strong>Technical Concepts:</strong> Data Structures & Algorithms, Object-Oriented Programming, Recursion Strategies</li>
+        </ul>
+
+        <h3>My Team</h3>
+        <div class="team-card">
+            <h4>Ayush Nag</h4>
+            <p>USN: 01FE23BCI377</p>
+            <p>Roll No: 164</p>
+            <p>Division: F</p>
+        </div>
+        <div class="team-card">
+            <h4>Praveen Alur</h4>
+            <p>USN: 01FE23BCI023</p>
+            <p>Roll No: 109</p>
+            <p>Division: F</p>
+        </div>
+        <div class="team-card">
+            <h4>Nakul Singh</h4>
+            <p>USN: 01FE23BCI074</p>
+            <p>Roll No: 136</p>
+        </div>
+        <div class="team-card">
+            <h4>Anirudh Zalki</h4>
+            <p>USN: 01FE23BCI026</p>
+            <p>Roll No: 112</p>
+        </div>
+    </section>
+
+    <section id="course">
+        <h2>Course</h2>
+        <p>The problem space which we chose is 'Public Transport'. As we can see from the city design, it is a very messy, congested, and highly populated city. There will be a lot of traffic jams and traffic-related problems in the city because of that. Hence, we really need good public transport facilities in the city.</p>
+
+        <h2>After arriving at the problem space, we analyzed the city design:</h2>
+        <table>
+            <caption>Identification of the Business Cases</caption>
+            <thead>
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Aspect</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Tracking and managing the movements of public transports</td>
+                    <td>Ensuring efficient routing, scheduling, and monitoring of public transportation vehicles.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Collecting fares and taxes for the management and funding of those transports</td>
+                    <td>Implementing systems to collect fares from passengers and taxes for operational costs.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Payment of those taxes</td>
+                    <td>Managing the processes through which taxes are paid for the maintenance and development of public transport.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Availability of these transporting facilities to all the people</td>
+                    <td>Ensuring equitable access to transportation services for all members of the community.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>These four were the most important points which needed to be worked on. Keeping these in mind, we identified the business cases. And this is how the business cases were identified.</h2>
+
+        <h2>Project Overview</h2>
+        <p>Design a city with a well-connected and efficient public transport network, considering factors like frequency, cost, and accessibility.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sl. No</th>
+                    <th>Business Case Identified</th>
+                    <th>Description</th>
+                    <th>Owner</th>
+                    <th>Probable Tools</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Listing all the public transports in the city.</td>
+                    <td>List all the transports according to their seating capacity.</td>
+                    <td>Praveen</td>
+                    <td>Array</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sorting all the public transports.</td>
+                    <td>Sort them according to the average number of people boarding them per day.</td>
+                    <td>Praveen</td>
+                    <td>Merge Sort</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Collecting all the parking and toll fares.</td>
+                    <td>Collect small toll and parking fares from all parts of the city.</td>
+                    <td>Anirudh Zalki</td>
+                    <td>Doubly Linked List</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Sorting all the fares.</td>
+                    <td>Sort them from max number of money collected to least.</td>
+                    <td>Anirudh Zalki</td>
+                    <td>Heap Sort</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Tracking all the public transport.</td>
+                    <td>Track all of their movements for better management.</td>
+                    <td>Nakul Singh</td>
+                    <td>Trees</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Giving all the age groups access to public transport.</td>
+                    <td>Make a separate section in each transport for different age groups.</td>
+                    <td>Nakul Singh</td>
+                    <td>Linked List</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Sort the vehicles based on the pollution they produce.</td>
+                    <td>Sort them in order from highest to least.</td>
+                    <td>Ayush Nag</td>
+                    <td>Heap Sort</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Implementing a common payment method.</td>
+                    <td>A common payment application for all types of payments.</td>
+                    <td>Ayush Nag</td>
+                    <td>Trees/Graph</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="business-case-2">
+        <h2>Business Case 2: Sorting Public Transports</h2>
 
         <h3>Problem Statement</h3>
-        <p>Sort a list of transport modes by daily ridership using the Merge Sort algorithm.</p>
+        <p>Sort a list of transportation services based on their daily ridership in ascending order for better analysis and decision-making.</p>
 
         <h3>Challenges</h3>
         <ul>
-            <li>Sorting a custom data structure (Transport class).</li>
-            <li>Efficient sorting with optimal time complexity.</li>
-            <li>Maintaining stability in sorting.</li>
-            <li>Managing memory for temporary arrays during merging.</li>
+            <li>Representing transportation data effectively.</li>
+            <li>Implementing an efficient sorting mechanism.</li>
+            <li>Handling merging of subarrays correctly.</li>
+            <li>Ensuring scalability for larger datasets.</li>
         </ul>
 
-        <h3>Solution</h3>
+        <h3>Solutions</h3>
         <ul>
-            <li>Use the Merge Sort algorithm for efficient sorting.</li>
-            <li>Implement a custom Transport class to hold data.</li>
-            <li>Use temporary arrays (<code>leftArr</code>, <code>rightArr</code>) for merging sorted subarrays.</li>
+            <li>Use the Transport structure to store name and daily ridership.</li>
+            <li>Employ the Merge Sort algorithm for efficient sorting (<strong>O(nlogn)</strong>).</li>
+            <li>Divide the logic into merge and mergeSort functions for clarity.</li>
+            <li>Use temporary arrays to facilitate stable merging.</li>
         </ul>
 
-        <h3>Algorithm Used</h3>
-        <p><strong>Merge Sort:</strong> A divide-and-conquer approach that splits and merges subarrays to achieve sorted order.</p>
+        <h3>Algorithm</h3>
+        <ol>
+            <li><strong>Divide:</strong> Split the array into two halves recursively.</li>
+            <li><strong>Conquer:</strong> Merge sorted halves by comparing elements.</li>
+            <li><strong>Combine:</strong> Reconstruct the original array in sorted order.</li>
+        </ol>
 
-        <h3>Data Structures Used</h3>
-        <ul>
-            <li><strong>Class (Transport):</strong> Stores transport data.</li>
-            <li><strong>Vector (std::vector):</strong> Stores a list of Transport objects and temporary arrays for merging.</li>
-        </ul>
+        <h3>Steps</h3>
+        <ol>
+            <li>Define the Transport structure.</li>
+            <li>Initialize transport data in an array.</li>
+            <li>Use mergeSort to recursively sort the array.</li>
+            <li>Merge sorted parts using the merge function.</li>
+            <li>Display the sorted results.</li>
+        </ol>
 
-        <h3>Efficiency</h3>
-        <ul>
-            <li><strong>Time Complexity:</strong> <code>O(nlogn)</code></li>
-            <li><strong>Space Complexity:</strong> <code>O(n)</code> due to temporary arrays.</li>
-        </ul>
+        <h3>Conclusion</h3>
+        <p>The program sorts transportation services efficiently using Merge Sort, ensuring accuracy and scalability for larger datasets.</p>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Design Analysis and Algorithm Portfolio</p>
-    </footer>
 </body>
 </html>
