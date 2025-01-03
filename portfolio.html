@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Analysis and Algorithm Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: #0073e6;
+            color: #fff;
+            padding: 10px 15px;
+            text-align: center;
+        }
+        nav {
+            background: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            color: #0073e6;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #0073e6;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .skills-list {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .skills-list li {
+            margin-bottom: 5px;
+        }
+        .team-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .team-card h4 {
+            margin: 0 0 5px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background-color: #1e293b;
+            color: #ffffff;
+            text-align: left;
+        }
+        table th, table td {
+            padding: 1rem;
+            border: 1px solid #ffffff;
+        }
+        @media screen and (max-width: 768px) {
+            section {
+                padding: 1rem;
+            }
+            table, table th, table td {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Design Analysis and Algorithm Portfolio</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#me-and-my-team">Me and My Team</a>
+        <a href="#course">Course</a>
+        <a href="#project">Project</a>
+        <a href="#business-case-1">Business Case 1</a>
+        <a href="#business-case-2">Business Case 2</a>
+    </nav>
+
+    <section id="business-case-1">
+        <h2>Business Case 1: Sorting Public Transports by Daily Ridership</h2>
+
+        <h3>Problem Statement</h3>
+        <p>Sort a list of transport modes by daily ridership using the Merge Sort algorithm.</p>
+
+        <h3>Challenges</h3>
+        <ul>
+            <li>Sorting a custom data structure (Transport class).</li>
+            <li>Efficient sorting with optimal time complexity.</li>
+            <li>Maintaining stability in sorting.</li>
+            <li>Managing memory for temporary arrays during merging.</li>
+        </ul>
+
+        <h3>Solution</h3>
+        <ul>
+            <li>Use the Merge Sort algorithm for efficient sorting.</li>
+            <li>Implement a custom Transport class to hold data.</li>
+            <li>Use temporary arrays (<code>leftArr</code>, <code>rightArr</code>) for merging sorted subarrays.</li>
+        </ul>
+
+        <h3>Algorithm Used</h3>
+        <p><strong>Merge Sort:</strong> A divide-and-conquer approach that splits and merges subarrays to achieve sorted order.</p>
+
+        <h3>Data Structures Used</h3>
+        <ul>
+            <li><strong>Class (Transport):</strong> Stores transport data.</li>
+            <li><strong>Vector (std::vector):</strong> Stores a list of Transport objects and temporary arrays for merging.</li>
+        </ul>
+
+        <h3>Efficiency</h3>
+        <ul>
+            <li><strong>Time Complexity:</strong> <code>O(nlogn)</code></li>
+            <li><strong>Space Complexity:</strong> <code>O(n)</code> due to temporary arrays.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Design Analysis and Algorithm Portfolio</p>
+    </footer>
+</body>
+</html>
